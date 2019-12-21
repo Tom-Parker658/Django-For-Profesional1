@@ -126,4 +126,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+# New user Model "users app"
 AUTH_USER_MODEL = 'users.CustomUser'
+# Where should we be redirected after the login and logout? 'Home page'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
